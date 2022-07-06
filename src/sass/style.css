@@ -727,5 +727,58 @@ template {
   height: 270px;
   border: solid 2px black;
 }
+.skills__wrapper-item .title {
+  padding: 20px 20px;
+}
+.skills__toddler {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  column-gap: 20px;
+}
+.skills__toddler-item {
+  position: relative;
+  height: 300px;
+}
+.skills__toddler-item .skills__toddler-title {
+  display: inline;
+  margin-left: 13px;
+}
+.skills__toddler-item .skills__toddler-title:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  background: #FFA501;
+}
+.skills__toddler-item .skills__toddler-title:before {
+  position: absolute;
+  content: "";
+  top: -5px;
+}
+.skills__toddler-item .skills__toddler-text {
+  position: absolute;
+  top: 0;
+  right: 17px;
+}
+.skills__toddler-item .skills__toddler-line {
+  position: relative;
+  margin-top: 25px;
+  width: 350px;
+  height: 14px;
+  border-radius: 3px;
+  background-color: #E8E4DE;
+}
+.skills__toddler-item .skills__toddler-line-2 {
+  position: absolute;
+  background-color: #FFA501;
+  height: 14px;
+  border-radius: 3px;
+  width: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */

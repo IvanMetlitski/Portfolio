@@ -11,6 +11,49 @@
       width: 270px;
       height: 270px;
       border: solid 2px black;
+      .title {
+        padding: 20px 20px;
+      }
+    }
+  }
+  &__toddler {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    column-gap: 20px;
+    &-item {
+      position: relative;
+      height: 300px;
+      .skills__toddler-title {
+        display: inline;
+        margin-left: 13px;
+        @include before_circle;
+        &:before {
+          position: absolute;
+          content: '';
+          top: -5px;
+        }
+      }
+      .skills__toddler-text {
+        position: absolute;
+        top: 0;
+        right: 17px;
+      }
+      .skills__toddler-line {
+        position: relative;
+        margin-top: 25px;
+        width: 350px;
+        height: 14px;
+        border-radius: 3px;
+        background-color: #E8E4DE;
+        &-2 {
+          position: absolute;
+          background-color: $main-color;
+          height: 14px;
+          border-radius: 3px;
+          width: 30px;
+        }
+      }
     }
   }
 }
