@@ -1,0 +1,16 @@
+.skills {
+  padding-top: 120px;
+  &__wrapper {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    &-item {
+      display: block;
+      padding: 20px;
+      width: 270px;
+      height: 270px;
+      border: solid 2px black;
+    }
+  }
+}

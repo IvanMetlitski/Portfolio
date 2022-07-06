@@ -362,6 +362,10 @@ template {
   font-size: 36px;
   line-height: 60px;
 }
+.title_fz12 {
+  font-size: 12px;
+  line-height: 18px;
+}
 .title_fz14 {
   font-size: 14px;
   line-height: 21px;
@@ -705,6 +709,23 @@ template {
   font-size: 12px;
   line-height: 18px;
   margin-top: 5px;
+}
+
+.skills {
+  padding-top: 120px;
+}
+.skills__wrapper {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+.skills__wrapper-item {
+  display: block;
+  padding: 20px;
+  width: 270px;
+  height: 270px;
+  border: solid 2px black;
 }
 
 /*# sourceMappingURL=style.css.map */
