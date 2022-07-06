@@ -16,12 +16,14 @@
   }
   &__descr {
     padding-top: 6px;
+    .divider {
+      margin: 0;
+    }
   }
   &__title {
     position: relative;
-    padding-left: 12px;
-    padding-top: 1px;
-    @include before_circle
+    padding: 1px 0 0 12px;
+    @include before_circle;
   }
   &__text {
     margin-top: 20px;
@@ -30,7 +32,8 @@
   }
   &__skills {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px);
+    grid-auto-rows: 1fr;
     column-gap: 50px;
     row-gap: 20px;
     &-item {
