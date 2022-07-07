@@ -9,3 +9,12 @@ close.addEventListener('click', ()=> {
     menu.classList.remove('active')
 })
 
+const percents = document.querySelectorAll('.skills__toddler-text'),
+      lines = document.querySelectorAll('.skills__toddler-line-2');
+
+percents.forEach((item, i)=>{
+    lines[i].style.width = item.innerHTML
+})
+
+
+
