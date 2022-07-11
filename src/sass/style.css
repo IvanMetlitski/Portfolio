@@ -946,4 +946,139 @@ template {
   line-height: 21px;
 }
 
+@media (max-width: 1439px) {
+  .sidepanel {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .sidepanel {
+    display: none;
+  }
+  .about__wrapper {
+    grid-template-columns: 400px 520px;
+    column-gap: 40px;
+  }
+  .about__skills {
+    grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px);
+    column-gap: 20px;
+  }
+  .about__skills-item {
+    grid-template-columns: 40px 195px;
+    column-gap: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .title_fz36 {
+    font-size: 30px;
+  }
+  .about__wrapper {
+    grid-template-columns: 300px 360px;
+  }
+  .about__photo {
+    grid-row: 1/3;
+  }
+  .about__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about__skills {
+    grid-template-columns: 380px;
+    grid-auto-rows: minmax(115px, auto);
+  }
+  .about__skills-item {
+    grid-template-columns: 40px 320px;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .title_fz36 {
+    font-size: 30px;
+  }
+  .title_fz48 {
+    font-size: 28px;
+  }
+  .promo {
+    background: url("../../../src/img/main_bg.jpg") no-repeat 65%/cover;
+  }
+  .promo__title {
+    line-height: 39px;
+    width: 300px;
+  }
+  .about {
+    padding-top: 40px;
+  }
+  .about__wrapper {
+    grid-template: 400px auto auto/1fr;
+  }
+  .about__photo {
+    grid-row: unset;
+  }
+  .about__photo img {
+    width: 50%;
+    height: 100%;
+    object-fit: revert;
+  }
+  .about__skills {
+    grid-template-columns: repeat(2, 260px);
+  }
+  .about__skills-item {
+    grid-template-columns: 40px 200px;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .title_fz48 {
+    font-size: 26px;
+  }
+  .title_fz36 {
+    font-size: 24px;
+  }
+  .hamburger {
+    right: 20px;
+  }
+  .menu__block {
+    width: 250px;
+    padding-left: 20px;
+  }
+  .promo {
+    background: url("../../../src/img/main_bg.jpg") no-repeat 64%/cover;
+  }
+  .promo__title {
+    line-height: 39px;
+    width: 300px;
+  }
+  .promo__btns {
+    margin-top: 30px;
+  }
+  .about__wrapper {
+    grid-template-columns: 320px auto auto/1fr;
+  }
+  .about__skills {
+    grid-template-columns: 1fr;
+  }
+  .about__photo {
+    grid-row: unset;
+  }
+  .about__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
