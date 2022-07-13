@@ -303,19 +303,34 @@
   .contacts {
     &__wrapper {
       grid-template-columns: 280px;
+      justify-content: center;
     }
     &__form {
-      grid-template-columns: 250px;
-      justify-content: center;
+      grid-template-columns: 280px;
     }
     &__textarea {
       position: relative;
       grid-column: unset;
-      justify-content: center;
+    }
+    &__form {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 260px;
+      justify-content: space-between;
+      row-gap: 27px;
     }
     &__triggers {
       grid-column: unset;
-      justify-content: center;
+      justify-content: space-around;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+    }
+    &__btn {
+      height: 60px;
+      border: none;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 }

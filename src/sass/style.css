@@ -871,11 +871,11 @@ template {
   margin-top: 20px;
 }
 .contacts__link {
-  margin-right: 25px;
+  margin-right: 35px;
 }
 .contacts__link img {
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 20px;
+  max-height: 20px;
 }
 .contacts__link:hover {
   text-decoration: none;
@@ -1205,19 +1205,34 @@ template {
   }
   .contacts__wrapper {
     grid-template-columns: 280px;
+    justify-content: center;
   }
   .contacts__form {
-    grid-template-columns: 250px;
-    justify-content: center;
+    grid-template-columns: 280px;
   }
   .contacts__textarea {
     position: relative;
     grid-column: unset;
-    justify-content: center;
+  }
+  .contacts__form {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 260px;
+    justify-content: space-between;
+    row-gap: 27px;
   }
   .contacts__triggers {
     grid-column: unset;
-    justify-content: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  .contacts__btn {
+    height: 60px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 

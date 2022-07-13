@@ -61,12 +61,11 @@
 
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ОБО МНЕ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#about_me">ОБО МНЕ</a></li>
+                    <li class="menu__link"><a href="#my_resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#my_skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#my_portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#my_contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
 
@@ -98,13 +97,13 @@
             <div class="title title_fz16 promo__subtitle">Меня зовут Иван Метлицкий</div>
             <h1 class="title title_fz48 promo__title">Я web-разработчик из города Мозырь</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Обо мне</a>
+                <a href="#my_portfolio" class="promo__link btn">Портфолио</a>
+                <a href="#about_me" class="promo__link">Обо мне</a>
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section id="about_me" class="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
@@ -144,7 +143,7 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section id="my_resume" class="resume">
         <div class="container">
             <h2 class="title title_fz16 resume__title">Опыт</h2>
             <div class="title title_fz36 resume__subtitle">Чем я буду полезен</div>
@@ -193,7 +192,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="my_skills" class="skills">
         <div class="container">
             <h2 class="title title_fz16 resume__title">Навыки</h2>
             <div class="title title_fz36 resume__subtitle">Что я использую в работе</div>
@@ -249,7 +248,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section id="my_portfolio" class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 portfolio__title">Портфолио</h2>
             <div class="title title_fz36 portfolio__subtitle">Мои навыки</div>
@@ -278,7 +277,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="my_contacts" class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -294,17 +293,17 @@
                     </div>
                     <div class="contacts__social">
                         <a href="#" class="contacts__link">
-                            <img src="icons/social/facebook.svg" alt="facebook">
+                            <img style="rotate: 90deg" src="icons/social/facebook.svg" alt="facebook">
                         </a>
                         <a href="#" class="contacts__link">
                             <img src="icons/social/telegram.svg" alt="telegram">
                         </a>
                         <a href="#" class="contacts__link">
-                            <img src="icons/social/instagram.svg" alt="instagram">
+                            <img style="rotate: 90deg" src="icons/social/instagram.svg" alt="instagram">
                         </a>
                     </div>
                     <div class="title title_fz14 contacts__text">
-                        Или оставьте ваши данные и я сама вам напишу:
+                        Или оставьте ваши данные и я сам вам напишу:
                     </div>
 
                     <form action="#" class="contacts__form">
